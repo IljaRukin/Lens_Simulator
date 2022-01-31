@@ -166,9 +166,9 @@ frame3.pack()
 lab_LL = tk.Label(frame3, text='lens spacing: ')
 lab_LL.pack( side = tk.LEFT )
 
-val_L = [0]*lensNR
-lab_L = [0]*lensNR
-box_L = [0]*lensNR
+val_L = [0]*(lensNR-1)
+lab_L = [0]*(lensNR-1)
+box_L = [0]*(lensNR-1)
 for ii in range(len(val_L)):
 	lab_L[ii] = tk.Label(frame3, text='L'+str(ii)+'-L'+str(ii+1)+' ')
 	lab_L[ii].pack( side = tk.LEFT )
